@@ -242,6 +242,7 @@ body{
 
 .player__img{
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .player__img img{
@@ -249,6 +250,7 @@ body{
     height: auto;
     object-fit: cover;
 }
+
 
 
 .hidden {
