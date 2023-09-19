@@ -26,15 +26,20 @@ body{
 
 .play-list {
     text-align: left;
+    padding: 0;
+
 }
 
 .play-item {
     position: relative;
-    padding: 5px 5px 20px 5px;
+    padding: 5px 5px 5px 20px;
     list-style: none;
     opacity: .8;
     cursor: pointer;
     transition: .3s;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
 }
 
 .play-item:hover {
@@ -98,6 +103,18 @@ body{
     margin-top: 24px;
     color: #fff;
 }
+
+.player-name__author{
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.player-name__title{
+    text-align: right;
+}
+
 .wrapper-time-volume{
     display: flex;
     align-items: center;
@@ -107,9 +124,10 @@ body{
 
 .player-time{
     display: flex;
-    /*margin-top: 24px;*/
     margin-bottom: 10px;
     justify-content: center;
+    color: #fff;
+
 }
 
 
@@ -219,4 +237,20 @@ body{
 
 .volume-controls svg:hover {
     fill: #bdae82;
+}
+
+
+.player__img{
+    margin-bottom: 10px;
+}
+
+.player__img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.hidden {
+    display: none!important;
 }
